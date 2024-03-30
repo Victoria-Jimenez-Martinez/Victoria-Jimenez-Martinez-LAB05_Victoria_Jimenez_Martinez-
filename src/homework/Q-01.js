@@ -1,49 +1,55 @@
 (function () {
-    // Lista de correos electrónicos de usuarios de Meta-X
-    var emails = [
+    /* NOMBRE CORRECTAMETE LAS SIGUIENTES VARIABLES
+       ADEMAS DE COMPROBAR SI USA LET O CONST,
+      SE PUEDE REFACTORIZAR, ETC.
+    */
+    //lista de emails de usuarios de Meta-X
+    var USER_EMAILS = [
         "email1@gmail.com",
-        "email2@gmail.com",
-        "email3@gmail.com"
+        "email1@gmail.com",
+        "email1@gmail.com"
     ];
-    console.log(emails);
-    // Lista de artículos de un carrito
-    var cartItems = [
+    console.log(USER_EMAILS);
+    //Lista de compras de un carrito
+    var CART_ITEMS = [
         { product: "switch" },
         { product: "X-box Controller" },
         { product: "steam-gift-card" },
     ];
-    console.log(cartItems);
-    // Función para sumar 3 a un número y retornarlo
-    var addThree = function (num) {
-        return num + 3;
-    };
+    console.log(CART_ITEMS);
+    //funcion para sumar mas 3 a un numero y retornarlo
+    var addThree = function (num) { return num + 3; };
     console.log(addThree(2));
-    // Función para capitalizar una palabra pasada por parámetro
-    // Se refactorizó el nombre de la función a camelCase
-    // El resultado no debería cambiar
-    var capitalize = function (word) {
+    //funcion para capitalizar una palabra pasara por params
+    //idente o refactorice de ser necesario
+    //el resultado no deberia cambiar
+    function capitalizeWord(word) {
         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-    };
-    console.log(capitalize("capricorn"));
-    // Variable que indica si ocurrió un evento
-    var eventOccurred = false;
-    if (eventOccurred)
+        //tambien puede ser =>
+        //const CAPITALIZED_WORD = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+        //return CAPITALIZED_WORD;
+    }
+    console.log(capitalizeWord("capricorn"));
+    //variable que alerta en caso de que algun evento suceda
+    var isEventOccurred = false;
+    if (isEventOccurred)
         console.log('event');
-    // Variable que se encarga de verificar si un usuario puede acceder o no
-    var hasAccess = true;
-    if (hasAccess)
+    //variable que se encarga de verificar 
+    //si un usuario puede acceder o no
+    var CAN_USER_ACCESS = true;
+    if (CAN_USER_ACCESS)
         console.log('welcome');
-    // Variable para calcular el promedio de 3 números
-    var average = (1 + 2 + 3) / 3;
-    console.log(average);
-    // Variable que almacena el valor de PI
+    //variable para hallar el promedio de 3 numeros
+    var AVERAGE = (1 + 2 + 3) / 3;
+    console.log(AVERAGE);
+    //variable que almacena el valor de PI
     var PI = 3.141592654;
     console.log(PI);
-    // Variable que controla si un archivo es editable
-    var isEditable = false;
-    if (isEditable)
+    //variable que controla si un archivo es modificable 
+    var isFileEditable = false;
+    if (isFileEditable)
         console.log('edit this file?');
-    // Variable para almacenar el valor de e
-    var e = 2.718281828;
-    console.log('Value of E: ' + e);
+    //variable para almacenar el valor de e
+    var E = 2.718281828;
+    console.log(E);
 })();

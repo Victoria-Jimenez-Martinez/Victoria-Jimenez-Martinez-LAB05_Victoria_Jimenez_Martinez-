@@ -39,6 +39,7 @@
   }
   
   console.log('Rectangle Area: ' + calculateRectangleArea(4, 6));
+  
   function calculateCircleArea(radius: number): number {
     return calculateArea('circle', radius);
   }

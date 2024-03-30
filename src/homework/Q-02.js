@@ -7,28 +7,8 @@
         }
         return WordToWord;
     }());
-    //Example of Props
-    var propsObject = { name: "John", age: 30 };
-    console.log(propsObject);
-    //Example of Moves
-    var moves = ["move1", "move2", "move3"];
-    console.log(moves);
-    function getFood() {
-        return "Pizza";
-    }
-    //Example of getFood
-    console.log("Selected food:", getFood());
-    function setProductName() {
-        return "Example Product";
-    }
-    //Example of etProductName
-    console.log("Product name set to:", setProductName());
-    //Example of Directions 
-    var direction = "down";
-    console.log("Direction:", direction);
-    //Example of IDbProps
-    var dbProps = { dbName: "example_db", dbVersion: 1 };
-    console.log(dbProps);
+    function getFood() { }
+    function setProductName() { }
     var AToBToC = /** @class */ (function () {
         function AToBToC() {
         }
@@ -36,8 +16,8 @@
     }());
     // los 2 valores siguientes son constantes.
     var CONSTANT_ONE = 3;
-    var constantTwo = 4;
+    var CONSTANT_TWO = 4;
     //Example
     console.log("Value of CONSTANT_ONE:", CONSTANT_ONE);
-    console.log("Value of constantTwo:", constantTwo);
+    console.log("Value of CONSTANT_TWO:", CONSTANT_TWO);
 })();

@@ -27,14 +27,14 @@
     const a = 5;
     const b = 333;
     const result = a + b;
-    console.log('addition: '+ result);
+    console.log('Addition: ' + result);
     const newResult = result * 10;
     const array = [1, 2, 3, 4, 5];
     const mapResult = array.map(element => {
-      return element * newResult;
+        return element * newResult;
     });
     console.log(mapResult);
-  }
+}
 
-  weirdFunction();
+weirdFunction();
 })();
