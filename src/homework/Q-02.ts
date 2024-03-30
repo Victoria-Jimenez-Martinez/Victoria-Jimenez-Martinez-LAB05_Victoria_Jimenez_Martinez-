@@ -5,26 +5,62 @@
   */
  
 
-  class word_to_word {}
+  class WordToWord {}
 
-  interface props {}
+  interface Props {
+    name: string;
+    age: number;
+  }
+  
+  //Example of Props
+  const propsObject: Props = { name: "John", age: 30 };
+  console.log(propsObject);
 
-  type moves = {}
+  type Moves = string[];
+  
+  //Example of Moves
+  const moves: Moves = ["move1", "move2", "move3"];
+  console.log(moves);
 
-  function GET_FOOD() {}
+  function getFood() {
+    return "Pizza";
+  }
 
-  function SETPRODUCTNAME() {}
+  //Example of getFood
+  console.log("Selected food:", getFood());
 
-  type directions = {}
+  function setProductName() {
+    return "Example Product";
+  }
 
-  interface IDBPROPS {}
+  //Example of etProductName
+  console.log("Product name set to:", setProductName());
 
-  class ATOBTOC {}
+  type Directions = "up" | "down" | "left" | "right";
+
+  //Example of Directions 
+  const direction: Directions = "down";
+  console.log("Direction:", direction);
+
+   interface IDbProps {
+    dbName: string;
+    dbVersion: number;
+  }
+
+  //Example of IDbProps
+  const dbProps: IDbProps = { dbName: "example_db", dbVersion: 1 };
+  console.log(dbProps);
+
+  class AToBToC {}
 
   // los 2 valores siguientes son constantes.
 
-  const constant_one = 3;
+  const CONSTANT_ONE = 3;
 
-  let constant_two = 4;
+  let constantTwo = 4;
+
+  //Example
+  console.log("Value of CONSTANT_ONE:", CONSTANT_ONE);
+  console.log("Value of constantTwo:", constantTwo);
 
 })();
